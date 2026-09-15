@@ -54,22 +54,22 @@
 			layer = BELOW_MOB_LAYER
 			pixel_y = 12
 			pixel_x = 0
-			setDir(SOUTH)
+			setDir(NORTH)
 		if(EAST)
 			layer = ABOVE_MOB_LAYER
 			pixel_y = 6
 			pixel_x = 12
-			setDir(WEST)
+			setDir(EAST)
 		if(WEST)
 			layer = ABOVE_MOB_LAYER
 			pixel_y = 6
 			pixel_x = -12
-			setDir(EAST)
+			setDir(WEST)
 		if(SOUTH)
 			layer = ABOVE_MOB_LAYER
 			pixel_y = -12
 			pixel_x =  0
-			setDir(NORTH)
+			setDir(SOUTH)
 
 // Removing traits and other stuff after xeno releases us from haul, works to drop devoured people too.
 /mob/living/carbon/human/proc/handle_unhaul()
