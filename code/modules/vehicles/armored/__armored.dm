@@ -379,7 +379,7 @@
 	if(isobserver(entering_mob))
 		interior?.mob_enter(entering_mob)
 		return FALSE
-	if(!ishuman(entering_mob) || !isxeno(entering_mob))
+	if(!ishuman(entering_mob) || isxeno(entering_mob))
 		return FALSE
 	if(entering_mob.skills.getRating(SKILL_LARGE_VEHICLE) < required_entry_skill)
 		return FALSE
